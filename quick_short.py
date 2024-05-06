@@ -23,4 +23,14 @@ def quickSort(array,start,end):
         return
 
     k = partition(array,start,end)
-    quickSort(array,)
+    quickSort(array,start,k-1)
+    quickSort(array,k+1,end)
+
+data = [10,6,11,8,12,2,9,15]
+print("Before Sorting : {}".format(data))
+
+lb =0
+ub = len(data)-1
+quickSort(data,lb,ub)
+
+print("After Sorting : {}".format(data))
