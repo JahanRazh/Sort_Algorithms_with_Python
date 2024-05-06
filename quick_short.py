@@ -19,7 +19,7 @@ def partition(array, lb, ub):
     return end
 
 def quickSort(array,start,end):
-    if start >= end: #end ekt wda starat ek vishalanm mokuth karn na  return krnv
+    if start >= end: #end ekt wda starat ek vishalanm mokuth karn na  return krnva
         return
 
     k = partition(array,start,end)
