@@ -22,15 +22,15 @@ def quickSort(array,start,end):
     if start >= end: #end ekt wda starat ek vishalanm mokuth karn na  return krnva
         return
 
-    k = partition(array,start,end)
+    k = partition(array,start,end) # partition function ek call karnava
     quickSort(array,start,k-1)
     quickSort(array,k+1,end)
 
 data = [10,6,11,8,12,2,9,15]
 print("Before Sorting : {}".format(data))
 
-lb =0
-ub = len(data)-1
-quickSort(data,lb,ub)
+lb =0 #low bound eke index ek
+ub = len(data)-1 # upper bound eke index ek
+quickSort(data,lb,ub) # function ek call karnva
 
 print("After Sorting : {}".format(data))
