@@ -34,3 +34,5 @@ ub = len(data)-1 # upper bound eke index ek
 quickSort(data,lb,ub) # function ek call karnva
 
 print("After Sorting : {}".format(data))
+
+#After Sorting : [2, 6, 8, 9, 10, 11, 12, 15]
