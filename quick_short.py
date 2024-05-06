@@ -9,6 +9,8 @@ def partition(array, lb, ub):
         while array[end] > pivot and start <= end:
             end = end -1   #end eke agaya adu index ekt env
 
+        #uda 2km wel natahara unt pasee check karala abalana index ek ,
+        # start ekt vada end eke index eke wadida kiyla
         if start<end: # start eke index wada end eke index ek wadinm
             array[start],array[end] = array[end],array[start] # swap karanav
 
